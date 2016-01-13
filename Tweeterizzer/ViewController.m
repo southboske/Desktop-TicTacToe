@@ -17,12 +17,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
+- (IBAction)twitterButton:(UIButton *)sender {
+    NSString *enteredText = self.textView.text;
+    NSInteger length = enteredText.length;
+    NSMutableString *vowels = [NSMutableString new];
+    
+    NSLog(@"entered text = %lu", length);
 
-- (IBAction)tweetButton:(UIButton *)sender {
+    for (int i = enteredText.length; i >= 0; i++) {
+        <#statements#>
+    }
+    
 }
+
 
 
 
